@@ -1,0 +1,553 @@
+﻿/*------Main content/wrappers------*/
+hr{
+    border: 0.5px solid #d3d7e2;
+    background: #d3d7e2;
+    height:0.5px;    
+}
+#left_wrapper{
+    margin: 0% 0% 0% 1%;
+    height:89vh;
+    width: 60%;
+    float:left;
+    overflow-y: scroll;
+}
+#upper_box_wrapper{
+    display:block;
+    position:relative;
+    overflow:auto;
+}
+#map{    
+    width: 39%;
+    height:89vh;
+    float:left;
+    margin: 0px;
+}
+body{
+    height:100%; 
+    background-color: #d3d7e2;
+}
+#for_rent_div{
+    border: 1px solid black;
+    border-top-left-radius: 4px;
+    width: 10%;
+    min-width: 150px;
+    min-height: 40px;
+    float: left;
+    /*/Style for button/*/
+    font-size: 1em;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.82);
+    padding: 0.7em 1em;
+    text-align: center;
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+#for_sale_div{
+    border: 1px solid black;
+    border-top-right-radius: 4px;
+    width: 10%;
+    min-width: 150px;
+    min-height: 40px;
+    float:left;
+    /*/Style for button/*/
+    font-size: 1em;
+    color: #fff;
+    background: #6a67ce;
+    padding: 0.7em 1em;
+    text-align: center;
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+/*------Search engine------*/
+#search_box{
+    min-height:300px;
+    width:100%;
+    padding-left: 2.3%;
+    padding-right: 2.3%;
+    overflow:auto;
+    background-color: white;
+}
+#city_div, #sort_by_div{
+    margin-top: 3%;
+    display:inline-block;
+    width: 49%;
+}
+#sort_by_div{
+     float: right;
+     text-align:right;
+}
+#sort_by_div label, #city_div label, #price_div label{
+    min-width: 60px;
+}
+#city_ddl, #sort_by_ddl{
+    margin-left: 3%;
+    width: 50%;
+    height: 35px;
+    min-width:120px;
+    border-radius: 4px;
+}
+/*Price*/
+#price_div{
+    width: 100%;
+    min-height:70px;
+}
+#price_slider{
+    display: inline-block;
+    width: 80%;
+    margin: 0% 0% 0% 3.5%;
+}
+#price_min{
+    margin-left: 90px;
+    font-weight:bold;
+    font-size:1.2em;
+    max-width:100px;
+}
+#price_max{
+    margin-right: 10%;
+    font-weight:bold;
+    font-size:1.2em;
+    max-width:100px;
+}
+/*Prop type*/
+#property_type_div{
+    display:inline-block;
+    width:95%;
+}
+.prop_type_div{
+    display:inline-block;
+    margin-left: 4%;
+    font-size: 1.2em;
+}
+#lbl_prop_type{
+    display:inline-block;
+}
+.prop_type_div input[type="checkbox"]{
+    margin: 0% 5px 0% 0%;
+}
+.outer_btn_div{
+    display:block;
+    width:100%;
+    text-align:right;
+    margin-top:1%;
+}
+#submit_searchengine_btn{
+    /*/Style for button/*/
+    font-size: 1em;
+    color: #fff;
+    background: #6a67ce;
+    padding: 0.7em 1em;
+    text-align: center;
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    min-height:40px;
+    min-width:150px;
+    display: inline-block;
+}
+
+#show_more_filters_btn{
+    /*/Style for button/*/
+    font-size: 1em;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.82);
+    padding: 0.7em 1em;
+    text-align: center;
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    min-height:41.5px;
+    min-width:150px;
+    display: inline-block;
+}
+#ajax_feedback_top, #ajax_feedback_bottom{
+    display:block;
+    width: 100%;
+    text-align:center;
+    min-height:5px;
+    color:#6a67ce;
+    font-size:1.5em;
+}
+/*------Search engine extension------*/
+#search_box_extension{
+    border-top:none;
+    min-height:300px;
+    width:100%;
+    padding-left: 2.3%;
+    padding-right: 2.3%;
+    overflow:auto;
+    background-color: white;
+}
+/*Bathrooms/Bedrooms*/
+#bedroom_div, #bathroom_div{
+    display:inline-block;
+    width: 100%;
+}
+#bedroom_ddl, #bathroom_ddl{
+    margin-left: 3%;
+    width: 30%;
+    height: 35px;
+    min-width:120px;
+    border-radius: 4px;
+}
+/*Size slider merged with price slider*/
+#size_slider{
+    padding-left:2%;
+}
+#lbl_low_size{
+    margin-left:8.5%;
+}
+/*Facilities*/
+#facility_div input[type="checkbox"]{
+    width: 10%;
+    float:left;
+    margin: 4px 5px 0px 10%;
+}
+#facilities{
+    margin-left:3%;
+}
+.fac_div{
+    float:left;
+    width:30%;
+    margin:1% 1% 1% 1%;
+}
+/*Distance*/
+#distance{
+    width:45%;
+    margin-top: 2%;
+    display:inline-block;
+    float:right;
+}
+.slider_range{
+    margin: 0px 2% 1% 2%;
+}
+.distance_div{
+    width: 100%;
+    min-height:70px;
+    margin-bottom:3%;
+}
+.txt_slider_left{    
+    border:0;
+    width: auto;
+    float:left;
+    max-width: 120px;
+    margin-top: 1%;
+}
+.txt_slider_right{    
+    border:0;
+    width: auto;
+    float:right;
+    text-align:right;
+    max-width: 120px;
+    margin-top: 1%;
+}
+/*Size*/
+#size{
+    margin-top: 2%;
+    width:45%;
+    min-height: 300px;
+    display:inline-block;
+}
+#bedroom_div{
+    display:block;
+    min-height: 70px;
+    margin-bottom:3%;
+    padding-top:2%;
+}
+#bedroom_div label, #bathroom_div label{
+    min-width: 80px;
+}
+#bathroom_div{
+    display:block;
+    min-height: 70px;
+    padding-top:2%;
+    margin-bottom:3%;
+}
+#sqm_div{    
+    min-height: 70px;
+    display:block;
+    margin-bottom:3%;
+}
+/*Rent rule*/
+#renting_rules input[type="checkbox"], #area_div input[type="checkbox"]{
+    width: 5%;
+    margin: 4px 5px 0px 10%;
+    min-width: 20px;
+}
+.rent_div, .area_div{
+    float:left;
+    width:30%;
+    margin:1% 1% 1% 0%;
+}
+#renting_rules, #inner_area_div{
+    margin-left:3%;
+    overflow:auto;
+}
+/*------------Ad content------------*/
+#outer_ad_box_div{
+    margin: 2% 0% 0% 0%;
+}
+.ad_box{
+    height: 380px;
+    width: 48%;
+    margin: 0% 1% 2% 0%;
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+.picture_box{
+    height: 80%;
+}
+.picture_box img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.info_box{
+    height: 20%;  
+    /*background-color:rgba(106,103,206);*/
+}
+.headline_box{
+    min-width: 200px;
+    float:left;
+    display:block;
+    width: 100%;
+    font-size:1.3em;
+    font-weight:bold;
+    margin-bottom:2%;
+    border-bottom: 1px solid black;
+}
+.size_box{
+    min-width: 110px;
+    display:inline-block;
+    float:left;
+    width:30%;
+}
+.sqm_box{
+    float:left;
+    display:inline-block;
+    width: 60%;
+    font-size:1.1em;
+}
+.bedroom_box{    
+    display:inline-block;
+    width: 10%;
+    font-size:1.1em;
+}
+.bed_glyphicon{
+    float:right;
+    display:inline-block;
+    width: 30%;
+}
+.bed_glyphicon img{
+    width: 100%;
+    height: 100%;
+    max-height: 15px;
+    min-height: 15px;
+    max-width:25px;
+    min-width:25px;
+    background-size: contain;
+}
+.fac_box{
+    display:inline-block;
+    width: 35%;
+    font-size:1.1em;
+}
+.price_box{
+    min-width: 100px;
+    float: right;
+    display:inline-block;
+    width: 25%;
+    text-align:right;
+    font-size:1.1em;
+    font-weight:bold;
+}
+/*------------Responsive------------*/
+@media(max-width:1450px) {
+    .ad_box {
+        height: 385px;
+    }
+    .headline_box {
+    min-height: 50px;
+    }
+}
+@media(max-width:1366px) {
+    #property_type_div {
+        width: 100%;
+    }
+    .prop_type_div {
+        min-width: 165px;
+        margin-top: 1%;
+    }
+    .fac_box{
+        width:25%;
+    }
+}
+@media(max-width:1130px) { /*Remove map, show only ads*/
+    #left_wrapper{        
+        margin: 0% 0% 0% 1%;
+        height:89vh;
+        width: 100%;
+        display:block;
+        overflow-y: initial;
+    }
+    #upper_box_wrapper{
+        display:block;
+        position:relative;
+        overflow:auto;
+    }
+    .fac_div, .rent_div, .area_div{
+        min-width:20px;
+        margin-bottom:3%;
+    }
+    .prop_type_div{
+        margin-bottom:3%;
+    }
+    #map{    
+        width: 0%;
+    }
+    body{
+        height:100%;
+    }
+    .fac_box{
+        display:inline-block;
+    }
+    .headline_box {
+    min-height: 25px;
+    }
+}
+@media(max-width: 860px){
+    .headline_box {
+    min-height: 50px;
+    }
+}
+
+@media(max-width: 740px){
+    .ad_box{
+        width: 98%;
+        margin: 0px 2% 5% 0px;
+    }
+    .headline_box {
+    min-height: 25px;
+    }
+}
+@media(max-width: 580px) {
+    #city_div{
+        width:100%;
+    }
+    #sort_by_div{
+        width:100%;
+        display:inline-block;
+        text-align:left;
+        margin-bottom: 5%;
+    }
+    #city_ddl, #sort_by_ddl{
+        width: 70%;
+    }
+    #price_max{
+    margin-right: 5%;
+    }    
+    #price_min{
+    margin-left: 15%;
+    }
+    .fac_div, .rent_div, .area_div{
+    width:40%;
+    margin-bottom:5%;
+    }
+    .prop_type_div{
+        margin-bottom:5%;
+    }
+    #submit_searchengine_btn{
+        width:100%;
+        display:block;
+    }
+    #show_more_filters_btn{
+        width:100%;
+        display:block;
+    }
+    #ajax_feedback_top, #ajax_feedback_bottom{
+        width:100%;
+        display:block;
+    }
+    #distance, #size{
+        width:100%;
+    }
+}
+@media(max-width: 450px) {
+    .rent_div{
+        width:100%;
+    }
+    #price_slider{
+        width:68%;
+    }
+    .fac_box{
+        width:25%;
+    }
+    .ad_box{
+    margin: 0% 1% 5% 0%;
+    border:1px solid black;
+}
+    .headline_box {
+        min-height: 50px;
+    }
+    .picture_box {
+        height: 75%;
+    }
+}
+@media(max-width: 350px) {
+    .fac_div {
+        width: 100%;
+    }
+
+    #for_rent_div, #for_sale_div {
+        width: 50%;
+        min-width: 0px;
+    }
+
+    #price_slider {
+        width: 90%;
+    }
+
+    #price_min {
+        margin-left: 1%;
+    }
+
+    .ad_box {
+        height: 280px;
+    }
+
+    .ad_box {
+        height: 280px;
+        margin: 0% 1% 10% 0%;
+        border: 1px solid black;
+    }
+
+    .picture_box {
+        height: 70%;
+    }
+
+    .info_box {
+        height: 20%;
+        min-height: 100px;
+    }
+
+    .headline_box {
+        min-height: 50px;
+    }
+}

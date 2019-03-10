@@ -1,0 +1,331 @@
+/*General*/
+#content_wrapper_create_ad{
+    margin: 1% 20% 1% 20%;
+    min-height: 400px;
+}
+#content_top_message{
+    text-align:center;
+}
+#create_ad_form{
+	 margin:auto;
+     width: 55%;
+}
+#create_ad_form label{
+	 width: 30%;
+     margin: 0% 0% 0% 5%;
+}
+#create_ad_form input{
+	 width: 60%;
+     margin: 5% 0% 0% 0%;
+     outline: none;
+     font-family: 'Lato', sans-serif;
+     font-size: 1em;
+     color: #000;
+}
+#create_ad_form select{
+	 width: 30%;
+     margin: 5% 0% 0% 0%;
+     outline: none;
+     font-family: 'Lato', sans-serif;
+     font-size: 1em;
+     color: #000;
+}
+#create_ad_form input[type="range"]{
+    width:30%;
+    display:inline-block;
+}
+.ad_content_inner_wrapper{
+    margin: 0px 5% 0px 5%;
+}
+.ad_content_div{
+    width:100%;
+}
+hr{
+    border:1px solid black;
+}
+/*Type*/
+#radio_sale_rent input[type="radio"]{
+    width: 5%;
+}
+/*Info*/
+#info textarea{
+    margin:1% 0px 0px 5%;
+    width: 91%;
+}
+#description_box{
+    margin: 5% 0px 5% 0%;
+}
+#size input[type="text"]{
+    width:10%;
+}
+#price input[type="text"]{
+    width:20%;
+}
+#pictures input[type="file"]{
+    width: 40%;
+    margin: 1% 5% 0% 5%;
+}
+/*Facilities*/
+#facilities input[type="checkbox"]{
+    width: 10%;
+    float:left;
+    margin: 4px 5px 0px 10%;
+}
+.fac_div{
+    float:left;
+    width:30%;
+    margin:1% 1% 1% 1%;
+}
+/*Rent rule*/
+#renting_rules input[type="checkbox"]{
+    width: 5%;
+    margin: 4px 5px 0px 10%;
+}
+.rent_div{
+    float:left;
+    width:40%;
+    margin:1% 1% 1% 0%;
+}
+/*Distance*/
+#lbl_slider_grocery, #lbl_slider_shopping, #lbl_slider_bts{
+    width: auto!important;
+}
+.lbl_slider_min{
+    width: 5% !important;
+    margin: 0px !important;
+}
+#distance label{
+    width: 25%;
+}
+#distance input[type="range"]{
+    width:35%;
+}
+.distance_div{
+    width:100%;
+}
+/*slider css: see style.css*/
+/*Submit button*/
+#create_ad_form input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #6a67ce;
+    border: none;
+    margin: 10% 0% 5% 0%;
+    width: 100%;
+    display: block;
+    padding: 0.7em 1em;
+    text-align: center;
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+    outline: none;
+    cursor: pointer;
+	text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#create_ad_form  input[type="submit"]:hover{
+    background:rgba(0, 0, 0, 0.82);
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+#submit_create_ad{
+    margin: 0% 5% 0% 5%;
+}
+/*User feedback*/
+#ajax_feedback{
+    text-align: center;
+    margin: 0px 0px 5% 0px;
+}
+/*-- Responsive --*/
+@media (max-width: 1680px) {
+    /*General*/
+    #create_ad_form {
+        width: 60%;
+    }
+}
+@media(max-width:1440px) {
+    /*General*/
+    #create_ad_form {
+        width: 70%;
+    }
+}
+@media(max-width:1366px) {
+    /*General*/
+    #create_ad_form {
+        width: 70%;
+    }
+}
+@media (max-width:1281px) { /* hi-res laptops and desktops */ 
+    /*General*/
+    #create_ad_form {
+        width: 80%;
+    }
+}
+@media (max-width:1025px) {  /*big landscape tablets, laptops, and desktops */ 
+    /*General*/
+    #create_ad_form {
+        width: 80%;
+    }
+    #content_wrapper_create_ad{
+        margin: 0% 10% 1% 10%;
+    }
+}
+@media (max-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    /*General*/
+    #create_ad_form {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {/*Going over to wrapped menu and shifting menu elements for logged-in user to the left*/
+    /*General*/
+    #content_wrapper_create_ad{
+        margin: 0%;
+    }
+    .create_ad_form {
+            width: 100%;
+            margin:0px;
+    }
+}
+@media (max-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    /*General*/
+    #content_wrapper_create_ad{
+        margin: 0%;
+    }
+    #create_ad_form {
+        width: 100%;
+        margin:0px;
+    }    
+    #create_ad_form select{
+	     width: 45%;
+         margin: 5% 0% 0% 0%;
+         outline: none;
+         font-family: 'Lato', sans-serif;
+         font-size: 1em;
+         color: #000;
+    }
+    /*Type*/
+    #radio_sale_rent input[type="radio"]{
+        margin: 0px 1% 0px 0px;
+    }
+    #radio_sale_rent input[type="radio"]:nth-child(3){
+        margin: 0px 0px 0px 5%;
+    }
+    /*Pictures*/
+    #pictures input[type="file"]{
+        width: 100%;
+    }
+    /*Distance*/
+    #distance input[type="range"]{
+        width:30%;
+    }
+}
+@media (max-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    /*General*/
+    #create_ad_form {
+        width: 100%;
+    }
+    #content_wrapper_create_ad {
+        margin: 0% 4% 1% 4%;
+    }
+    #create_ad_form label {
+        width: 100%;
+        margin: 7% 0% 1% 0%;
+    }
+    #create_ad_form select {
+        width: 100%;
+    }
+    hr {
+        margin-top: 25px !important;
+        margin-bottom: 10px !important;
+    }
+    #create_ad_form select {
+        width: 80%;
+        margin: 0%;
+    }
+    #create_ad_form input {
+        width: 100%;
+        margin: 0%;
+    }
+    /*Type*/
+    #radio_sale_rent input[type="radio"]:nth-child(3) {
+        margin: 0px 0px 0px 15%;
+    }
+    /*Info*/
+    #size input[type="text"] {
+        width: 25%;
+    }
+    #price input[type="text"] {
+    width: 50%;
+    }
+    #info textarea {
+    margin: 1% 0px 0px 0%;
+    width: 100%;
+    }
+    /*Pictures*/
+    #pictures input[type="file"] {
+    margin: 0px 0px 10% 0px;
+    }
+    /*Facilities*/
+    .fac_div {
+    float: left;
+    width: 50%;
+    margin: 5% 0% 5% 0%;
+    }
+    /*Renting rules*/
+    .rent_div {
+    float: left;
+    width: 100%;
+    margin: 5% 0% 5% 0%;
+    }
+    /*Distance*/
+    #distance input[type="range"] {
+    width: 50%;
+}
+}
+@media (max-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */
+    /*Type*/
+    #radio_sale_rent input[type="radio"]:nth-child(3) {
+    margin: 0px 0px 0px 15%;
+    }
+    /*Info*/
+    #size input[type="text"] {
+        width: 25%;
+    }
+    #price input[type="text"] {
+    width: 50%;
+    }
+    #info textarea {
+    margin: 1% 0px 0px 0%;
+    width: 100%;
+    }
+    /*Pictures*/
+    #pictures input[type="file"] {
+    margin: 0px 0px 10% 0px;
+    }
+    /*Facilities*/
+    .fac_div {
+    float: left;
+    width: 50%;
+    margin: 5% 0% 5% 0%;
+    }
+    /*Renting rules*/
+    .rent_div {
+    float: left;
+    width: 100%;
+    margin: 5% 0% 5% 0%;
+    }
+    /*Distance*/
+    #distance input[type="range"] {
+        width: 45%;
+    }
+}
+@media (max-width:310px) { 
+    .fac_div {
+    width: 100%;
+    }
+}
+/*-- //Responsive --*/
+/*-- //User_main_page --*/

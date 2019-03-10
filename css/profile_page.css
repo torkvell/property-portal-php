@@ -1,0 +1,111 @@
+#content_wrapper_profile_page{
+    margin: 1% 20% 1% 20%;
+    min-height: 400px;
+}
+#content_top_message{
+    text-align:center;
+}
+.profile_update_form{
+	 margin:auto;
+     width: 50%;
+}
+.profile_update_form label{
+	 width: 30%;
+     margin: 0% 0% 0% 4%;
+}
+.profile_update_form input{
+	 width: 60%;
+     margin: 10% 0% 0% 1%;
+     outline: none;
+     border: none;
+     border-bottom: 2px solid #000;
+     font-family: 'Lato', sans-serif;
+     font-size: 1em;
+     color: #000;
+}
+.profile_update_form input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #6a67ce;
+    border: none;
+    margin: 10% 0% 5% 0%;
+    width: 100%;
+    display: block;
+    padding: 0.7em 1em;
+    text-align: center;
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+    outline: none;
+    cursor: pointer;
+	text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.profile_update_form input[type="submit"]:hover{
+    background:rgba(0, 0, 0, 0.82);
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+#ajax_feedback{
+    text-align: center;
+    margin: 0px 0px 5% 0px;
+}
+
+/*-- Responsive --*/
+@media(max-width:1366px) {
+.profile_update_form{
+    width: 60%;
+}
+}
+@media (max-width:1281px) { /* hi-res laptops and desktops */ 
+.profile_update_form{
+    width: 70%;
+}
+}
+@media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+.profile_update_form{
+    width: 70%;
+}
+}
+@media (max-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+.profile_update_form{
+    width: 70%;
+}
+#content_wrapper_profile_page{
+    margin: 0% 10% 1% 10%;
+}
+}
+@media (max-width: 768px) {/*Going over to wrapped menu and shifting menu elements for logged-in user to the left*/
+.profile_update_form{
+    width: 80%;
+}
+#content_wrapper_profile_page{
+    border:none;
+}
+}
+@media (max-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+.profile_update_form{
+    width: 100%;
+}
+}
+@media (max-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+.profile_update_form{
+    width: 100%;
+}
+#content_wrapper_profile_page{
+    margin: 0% 5% 0% 5%;
+}
+}
+@media (max-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
+.profile_update_form{
+    width: 100%;
+}
+#content_wrapper_profile_page{
+    margin: 0% 5% 0% 5%;
+}
+}
+/*-- //Responsive --*/
+/*-- //User_main_page --*/

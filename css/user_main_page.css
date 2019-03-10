@@ -1,0 +1,147 @@
+/*-- User_main_page --*/
+/*General*/
+
+a{/*problem with user login navigation, no underline on navigation elements*/
+  text-decoration: none !important;
+  color: none !important;
+}
+a:hover{
+    text-decoration: none !important;
+    color: none !important;
+}
+/*Content*/
+#user_main_page_content_wrapper{
+    margin: 1% 10% 1% 10%;
+    min-height:400px;
+}
+#welcome_div{
+    text-align: center;
+}
+#button_wrapper{
+    margin-top: 3%;
+}
+/*Submit button*/
+.user_main_page_btn {
+    font-size: 1em;
+    color: #fff;
+    background: #6a67ce;
+    border: 1px solid black;
+    float:left;
+    width: 20%;
+    height: 120px;
+    padding-top: 25px;   
+    text-align: center;
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+    outline: none;
+    cursor: pointer;
+	text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.user_main_page_btn:hover{
+    background:rgba(0, 0, 0, 0.82);
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+/*Alternative 2 for button layout*/
+/*.user_main_page_btn{
+    border: 1px solid black;
+    text-align: center;
+    float:left;
+    width: 20%;
+    height: 120px;
+    padding-top: 25px;
+    background: #6a67ce;
+    background-image: -webkit-linear-gradient(top, #b1b1e8, #57578a);
+    background-image: -moz-linear-gradient(top, #b1b1e8, #57578a);
+    background-image: -ms-linear-gradient(top, #b1b1e8, #57578a);
+    background-image: -o-linear-gradient(top, #b1b1e8, #57578a);
+    background-image: linear-gradient(to bottom, #b1b1e8, #57578a);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 4px 13px #000000;
+    -moz-box-shadow: 3px 4px 13px #000000;
+    box-shadow: 3px 4px 13px #000000;
+    color: #fff;
+}
+.user_main_page_btn:hover {
+  background: #908fd9;
+  background-image: -webkit-linear-gradient(top, #908fd9, #5b5b82);
+  background-image: -moz-linear-gradient(top, #908fd9, #5b5b82);
+  background-image: -ms-linear-gradient(top, #908fd9, #5b5b82);
+  background-image: -o-linear-gradient(top, #908fd9, #5b5b82);
+  background-image: linear-gradient(to bottom, #908fd9, #5b5b82);
+  text-decoration: none !important;
+  color: none !important;
+}*/
+#profile_btn{
+    margin: 2% 6.66% 0% 0%;
+}
+#create_ad_btn{
+    margin: 2% 6.66% 0% 0%;
+}
+#my_ads_btn{
+    margin: 2% 6.66% 0% 0%;
+}
+#log_out_btn{
+    margin: 2% 0% 0% 0%;
+}
+
+/*-- Responsive --*/
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+
+}
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+}
+@media (max-width: 768px) {/*Going over to wrapped menu and shifting menu elements for logged-in user to the left*/
+#user_main_page_content_wrapper{
+    margin: 1% 31px 1% 31px;
+    min-height:400px;
+}
+#welcome_div{
+    text-align: center;
+}
+#button_wrapper{
+    margin-top: 1%;
+}
+.user_main_page_btn{
+    border: 1px solid black;
+    text-align: center;
+    float:left;
+    width: 100%;
+    height: 10%;
+    padding-top: 0.5%;
+}
+#profile_btn{
+    margin: 2% 6.66% 0% 0%;
+}
+#create_ad_btn{
+    margin: 4% 6.66% 0% 0%;
+}
+#my_ads_btn{
+    margin: 4% 6.66% 0% 0%;
+}
+#log_out_btn{
+    margin: 4% 0% 0% 0%;
+}
+}
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+
+}
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+}
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
+
+}
+/*-- //Responsive --*/
+/*-- //User_main_page --*/
