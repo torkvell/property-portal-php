@@ -1,2 +1,1 @@
-# toralf-fullstack
-My playground
+# Bachelor thesis
